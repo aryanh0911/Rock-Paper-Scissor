@@ -2,7 +2,8 @@ body{
     text-align: center;
     padding: 100px; 
     font-family: monospace;
-    background-color: #f5fcff;
+    /* background: linear-gradient(white, grey); */
+    background-color: snow;
 }
 
 
@@ -16,6 +17,7 @@ body{
 
 
 .title {
+    color: #313131;
     font-size: 24px;
     margin-bottom: 50px;
     text-decoration: none;
