@@ -6,7 +6,7 @@ let result = document.querySelector(".winner")
 
 function Draw1() {
     randomNumber1 = Math.floor(Math.random()*3);
-    randomHand1 = hands[randomNumber1]
+    let randomHand1 = hands[randomNumber1]
     let player1_p = document.querySelector(".player1")
     player1_p.textContent = "Player 1: " + randomHand1
 
@@ -49,3 +49,47 @@ function checkWinner(){
     }
     
 }
+
+
+
+//Hover-Glow
+const container = document.querySelector('.container');
+
+container.addEventListener('mouseover', () => {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    container.style.borderColor = `rgb(${r},${g},${b})`;
+    container.style.boxShadow = `5px 5px 20px rgb(${r},${g},${b})`;
+    });
+
+
+container.addEventListener('mouseout', () => {
+    // Reset the border color and box shadow
+    container.style.borderColor = 'grey';
+    container.style.boxShadow = '0px 0px 0px grey';
+});
+
+
+container.addEventListener('click', () => {
+    container.style.transform = scale(0.5)
+});
+
+
+
+//Reset Game
+function resetGame(){
+
+    result.textContent = "Winner:"
+    let player1_p = document.querySelector(".player1")
+    let player2_p = document.querySelector(".player2")
+    player1_p.textContent = "Player 1: "
+    player2_p.textContent = "Player 2: "
+
+
+}
+
+
+
+
+
