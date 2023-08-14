@@ -43,7 +43,7 @@ body{
 .container:hover {
     transform: scale(1.02);
     box-shadow: 5px 5px 20px grey;
-    border-color: red; /* Initial color, will be overridden by JavaScript */
+    border-color: red;
 }
 
 
