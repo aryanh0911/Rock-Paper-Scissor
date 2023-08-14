@@ -65,7 +65,6 @@ container.addEventListener('mouseover', () => {
 
 
 container.addEventListener('mouseout', () => {
-    // Reset the border color and box shadow
     container.style.borderColor = 'grey';
     container.style.boxShadow = '0px 0px 0px grey';
 });
