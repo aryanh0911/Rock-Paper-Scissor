@@ -30,7 +30,7 @@ body{
 
 .container {
     /* background-color: rgb(199, 195, 195); */
-    margin: 40px auto;
+    margin: 30px auto 40px auto;
     width: 600px;
     border: 2px solid grey; 
     border-radius: 8px;
@@ -124,3 +124,66 @@ body{
 .reset:active{
     transform: scale(1);
 }
+
+
+.contact{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+
+}
+
+.github-btn{
+    text-decoration: none;
+    color: black;
+    opacity: 50%;
+    transition: transform 0.1s,opacity 0.7s;
+
+}
+
+.github-btn:hover{
+    opacity: 100%;
+}
+
+.github-btn:active{
+    transform: scale(0.7);
+}
+
+.linkedin-btn{
+    text-decoration: none;
+    color: black;
+    opacity: 50%;
+    transition: transform 0.1s, opacity 0.7s;
+
+}
+
+.linkedin-btn:hover{
+    /* transform: scale(1.2); */
+    opacity: 100%;
+    color: #0A66C2;
+}
+
+.linkedin-btn:active{
+    transform: scale(0.7);
+}
+
+.twitter-btn{
+    text-decoration: none;
+    color: black;
+    opacity: 50%;
+    transition: transform 0.1s, opacity 0.7s;
+
+}
+
+.twitter-btn:hover{
+    /* transform: scale(1.2); */
+    opacity: 100%;
+    color: #1DA1F2;
+}
+
+.twitter-btn:active{
+    transform: scale(0.7);
+}
+
+
