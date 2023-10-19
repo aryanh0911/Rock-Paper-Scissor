@@ -89,3 +89,23 @@ function resetGame(){
 }
 
 
+
+
+//GSAP animations
+
+var tl = gsap.timeline()
+
+tl.from(".container", {
+    y: 100,
+    opacity: 0,
+    scale: .8,
+    delay: .3
+})
+
+tl.from(".rock, .paper, .scissor", {
+    duration: 1,
+    opacity: 0,
+    delay: .2,
+    stagger: .4
+})
+
